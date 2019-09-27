@@ -879,7 +879,7 @@ SELECT * FROM score WHERE c_no IN (
 +------+-------+--------+
 ```
 
-### UNION 和 NOTIN 的使用
+### UNION 和 NOT IN 的使用
 
 **查询 `计算机系` 与 `电子工程系` 中的不同职称的教师。**
 
