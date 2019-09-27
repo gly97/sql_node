@@ -1085,7 +1085,7 @@ mysql> SELECT * FROM student WHERE name NOT LIKE '王%';
 ```
 
 ### YEAR 与 NOW 函数
-month/day/minute
+**month/day/minute**
 **查询 `student` 表中每个学生的姓名和年龄。**
 
 ```mysql
@@ -1120,7 +1120,7 @@ SELECT MAX(birthday), MIN(birthday) FROM student;
 +---------------+---------------+
 ```
 
-### 多段排序/多端分组
+### 多段排序/多段分组
 
 **以 `class` 和 `birthday` 从大到小的顺序查询 `student` 表。**
 
