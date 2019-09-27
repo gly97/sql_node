@@ -1060,7 +1060,7 @@ SELECT class FROM student WHERE sex = '男' GROUP BY class HAVING COUNT(*) > 1;
 +-------+
 ```
 
-### NOTLIKE 模糊查询取反
+### NOT LIKE 模糊查询取反
 
 **查询 `student` 表中不姓 "王" 的同学记录。**
 
