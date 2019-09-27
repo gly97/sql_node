@@ -4,7 +4,7 @@
 
 ```shell
 # 登录MySQL
-$ mysql -u root -p12345612
+$ mysql -u root -设置的密码
 
 # 退出MySQL数据库服务器
 exit;
@@ -43,9 +43,14 @@ desc pet;
 SELECT * from pet;
 
 -- 插入数据
+--INSERT INTO 表名称 VALUES (值1, 值2,....)
+--我们也可以指定所要插入数据的列：
+--INSERT INTO table_name (列1, 列2,...) VALUES (值1, 值2,....)
+
 INSERT INTO pet VALUES ('puffball', 'Diane', 'hamster', 'f', '1990-03-30', NULL);
 
 -- 修改数据
+--UPDATE 表名称 SET 列名称 = 新值 WHERE 列名称 = 某值
 UPDATE pet SET name = 'squirrel' where owner = 'Diane';
 
 -- 删除数据
