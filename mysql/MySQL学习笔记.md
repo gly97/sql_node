@@ -880,6 +880,9 @@ SELECT * FROM score WHERE c_no IN (
 ```
 
 ### UNION 和 NOT IN 的使用
+Union：对两个结果集进行并集操作，不包括重复行，同时进行默认规则的排序；
+
+Union All：对两个结果集进行并集操作，包括重复行，不进行排序；
 
 **查询 `计算机系` 与 `电子工程系` 中的不同职称的教师。**
 
@@ -1082,7 +1085,7 @@ mysql> SELECT * FROM student WHERE name NOT LIKE '王%';
 ```
 
 ### YEAR 与 NOW 函数
-
+month/day/minute
 **查询 `student` 表中每个学生的姓名和年龄。**
 
 ```mysql
@@ -1117,7 +1120,7 @@ SELECT MAX(birthday), MIN(birthday) FROM student;
 +---------------+---------------+
 ```
 
-### 多段排序
+### 多段排序/多端分组
 
 **以 `class` 和 `birthday` 从大到小的顺序查询 `student` 表。**
 
